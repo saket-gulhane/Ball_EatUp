@@ -607,12 +607,12 @@ function playerVsenemy(obj1, obj2) {
       obj1.diameter / 2 + obj2.diameter / 2
     ) {
       if (obj1.diameter <= obj2.diameter) {
-        // gameover.play();
+        gameover.play();
         obj2.diameter = obj2.diameter + 8;
         obj1.diameter = 0;
         playerdied = 1;
       } else {
-        // win.play();
+        win.play();
         obj1.diameter = obj1.diameter + obj2.diameter / 8;
         obj2.diameter = 0;
       }
